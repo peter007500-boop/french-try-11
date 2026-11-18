@@ -1,0 +1,13 @@
+GitHub build instructions
+
+1. Extract this ZIP on your computer.
+2. In your GitHub repository, choose "Add file" > "Upload files".
+3. Open the extracted FrenchItemTranslator folder and upload its CONTENTS (not the outer folder).
+   Make sure the hidden .github folder is included. On Windows File Explorer, enable View > Show > Hidden items.
+4. Commit the upload to the main branch.
+5. Open the repository's Actions tab and select "Build Forge mod".
+6. When the run finishes successfully, open it and download the artifact named
+   FrenchItemTranslator-Forge-1.20.1. The downloaded artifact is a ZIP containing the mod JAR.
+7. Extract the downloaded artifact ZIP and put the .jar file into your Minecraft instance's mods folder.
+
+The workflow builds with Java 17 and Gradle 8.8 on GitHub's servers; Gradle does not need to be installed locally.
