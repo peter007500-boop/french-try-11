@@ -106,8 +106,7 @@ public final class FrenchItemTranslator {
                 return;
             }
             Minecraft mc = Minecraft.getInstance();
-            if (mc.player == null || mc.gameMode == null
-                    || !mc.options.heldItemTooltips || mc.gameMode.isSpectator()) {
+            if (mc.player == null || mc.gameMode == null || mc.player.isSpectator()) {
                 return;
             }
             if (currentGloss == null || lastStack.isEmpty() || highlightTimer <= 0) {
